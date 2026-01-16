@@ -9,7 +9,6 @@ services:
     ports:
       - "5434:5432"
     volumes:
-      # Zamiast ścieżki ./postgres_data, używamy nazwanego wolumenu
       - crypto_db_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U admin -d crypto_db"]
@@ -37,6 +36,7 @@ services:
       bash -c "airflow db init &&
       airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@example.com --password admin &&
       airflow standalone"
+
   grafana:
     image: grafana/grafana:latest
     container_name: grafana_crypto
@@ -44,8 +44,12 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana  # TĘDY GRAFANA ZAPISUJE DASHBOARDY
     depends_on:
       - postgres_crypto
-# DEFINICJA WOLUMENU (na samym końcu pliku)
+
+# DEFINICJA WOLUMENÓW
 volumes:
   crypto_db_data:
+  grafana_data:   # DODANO NOWY WOLUMEN
