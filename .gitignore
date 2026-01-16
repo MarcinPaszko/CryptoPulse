@@ -1,0 +1,12 @@
+# Logi i dane bazy
+logs/
+postgres_data/
+__pycache__/
+*.pyc
+
+# Pliki systemowe i lokalne ustawienia
+.env
+.DS_Store
+
+# Jeśli masz bazę SQLite lokalnie (opcjonalnie)
+*.db
