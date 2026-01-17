@@ -45,11 +45,11 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
-      - grafana_data:/var/lib/grafana  # TĘDY GRAFANA ZAPISUJE DASHBOARDY
+      - grafana_data:/var/lib/grafana 
     depends_on:
       - postgres_crypto
 
-# DEFINICJA WOLUMENÓW
+
 volumes:
   crypto_db_data:
-  grafana_data:   # DODANO NOWY WOLUMEN
+  grafana_data:   
