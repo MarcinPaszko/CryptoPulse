@@ -28,7 +28,6 @@ The Grafana interface is used for trend monitoring and technical analysis:
 
 ## Dashboard Preview
 
-![CryptoPulse BTC Dashboard](SCreen.png)
 
 
 ## Tech Stack
