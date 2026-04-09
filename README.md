@@ -26,9 +26,6 @@ The Grafana interface is used for trend monitoring and technical analysis:
 * **Time Series Analysis:** Real-time visualization of asset value changes with flexible time-range filtering.
 * **Data Exploration:** Identification of market patterns and price anomalies.
 
-## Dashboard Preview
-
-![CryptoPulse BTC Dashboard](SCreen.png)
 
 ## Tech Stack
 * **Language:** Python (Requests, Psycopg2)
