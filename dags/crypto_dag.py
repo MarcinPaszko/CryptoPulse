@@ -18,7 +18,7 @@ with DAG(
     catchup=False
 ) as dag:
 
-    # To zadanie mówi Airflow: "Wejdź do kontenera i odpal skrypt Pythona"
+    
     run_spark_script = BashOperator(
         task_id='fetch_btc_price_task',
         bash_command='python3 /opt/airflow/scripts/fetch_crypto_live.py'
