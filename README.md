@@ -29,8 +29,8 @@ The Grafana interface is used for trend monitoring and technical analysis:
 ## Dashboard Preview
 
 ![CryptoPulse BTC Dashboard](dashboard.png)
-
-
+## Google Cloud Platform Architecture
+![System Architecture](diagram-export-10.04.2026-11_35_21.png)
 ## Tech Stack
 * **Language:** Python (Requests, Psycopg2)
 * **Database:** PostgreSQL 15+
