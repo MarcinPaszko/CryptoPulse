@@ -13,7 +13,7 @@ default_args = {
 with DAG(
     'crypto_live_monitoring',
     default_args=default_args,
-    description='Pobieranie cen BTC co 5 minut',
+    description='BTC Download every 1 minute',
     schedule_interval='* * * * *',
     catchup=False
 ) as dag:
